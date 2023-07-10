@@ -1,0 +1,13 @@
+a = int(input("Enter Fizz: "))
+# b = int(input("Enter Buzz: "))
+c = int(input("Enter the last number: "))
+
+result_list = []
+shag = list(range(1, c+1))
+for i in shag:
+    if i % a == 0 and i % b == 0:
+        result_list.append('FB')
+    elif i % a == 0 and i % b is not 0:
+        result_list.append('F')
+        i += i
+print(result_list)    
